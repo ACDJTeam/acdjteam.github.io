@@ -86,7 +86,60 @@ footer {
 
 }
 
-@media screen and (width >
-500px) {
-    
-}
+html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .form-container {
+      background-color:  rgba(0, 0, 0, 0.8);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .form-label, .form-control, .form-control::placeholder {
+      color: rgb(238, 238, 238);
+    }
+
+    .form-control {
+      background-color: rgba(2, 0, 0, 0.925);
+      border: none;
+    }
+
+    .form-control:focus {
+      background-color: rgba(0, 0, 0, 0.582);
+      color: rgb(255, 255, 255);
+      box-shadow: none;
+    }
+
+    .btn-enviar {
+      background-color: #ff4d4d;
+      border: none;
+    }
+
+    .btn-enviar:hover {
+      background-color: #e63946;
+    }
+
+    footer {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .footer-fixed .links a {
+      margin: 0 10px;
+      color: white;
+    }
